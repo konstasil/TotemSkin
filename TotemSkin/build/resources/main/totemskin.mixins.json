@@ -1,0 +1,11 @@
+{
+    "required": true,
+    "package": "com.konstasiil.totemskin.mixin",
+    "compatibilityLevel": "JAVA_21",
+    "client": [
+        "PlayerItemInHandLayerMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}
