@@ -1,3 +1,13 @@
 {
-    "item.totemskin.totem_of_undying": "Тотем бессмертия"
+    "item.totemskin.totem_of_undying": "Тотем бессмертия",
+    "totemskin.config.title": "Настройки TotemSkin",
+    "totemskin.config.category.general": "Общие",
+    "totemskin.config.category.players": "Игроки",
+    "totemskin.config.globalMode": "Режим тотемов (глобальный)",
+    "totemskin.config.globalMode.tooltip": "СВОЙ: Тотемы отображают скин игрока.\nВАНИЛЬНЫЙ: Все тотемы используют стандартную текстуру.",
+    "totemskin.config.mobsMode": "Режим тотемов для мобов",
+    "totemskin.config.mobsMode.tooltip": "СВОЙ: Мобы с тотемами показывают текстуру на основе скина.\nВАНИЛЬНЫЙ: Мобы всегда используют стандартную текстуру.",
+    "totemskin.config.player.tooltip": "Переопределить режим тотема для %s",
+    "totemskin.config.noPlayers": "Игроки не найдены. Зайдите на сервер, чтобы настроить индивидуальные параметры.",
+    "totemskin.config.noServer": "Зайдите на сервер, чтобы настроить индивидуальные параметры."
 }

@@ -1,3 +1,13 @@
 {
-    "item.totemskin.totem_of_undying": "Tótem de inmortalidad"
+    "item.totemskin.totem_of_undying": "Tótem de inmortalidad",
+    "totemskin.config.title": "Configuración de TotemSkin",
+    "totemskin.config.category.general": "General",
+    "totemskin.config.category.players": "Jugadores",
+    "totemskin.config.globalMode": "Modo global de tótems",
+    "totemskin.config.globalMode.tooltip": "PROPIO: Los tótems muestran skins de jugadores.\nVANILLA: Todos los tótems usan textura por defecto.",
+    "totemskin.config.mobsMode": "Modo de tótems para mobs",
+    "totemskin.config.mobsMode.tooltip": "PROPIO: Mobs con tótems muestran textura basada en skin.\nVANILLA: Los mobs siempre usan textura por defecto.",
+    "totemskin.config.player.tooltip": "Sobreescribir modo de tótem para %s",
+    "totemskin.config.noPlayers": "No se encontraron jugadores. Únete a un servidor.",
+    "totemskin.config.noServer": "Únete a un servidor para configurar."
 }

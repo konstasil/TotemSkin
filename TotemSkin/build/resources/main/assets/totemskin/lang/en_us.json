@@ -1,3 +1,13 @@
 {
-    "item.totemskin.totem_of_undying": "Totem of Undying"
+    "item.totemskin.totem_of_undying": "Totem of Undying",
+    "totemskin.config.title": "TotemSkin Settings",
+    "totemskin.config.category.general": "General",
+    "totemskin.config.category.players": "Players",
+    "totemskin.config.globalMode": "Global Totem Mode",
+    "totemskin.config.globalMode.tooltip": "CUSTOM: Totems show player skins.\nVANILLA: All totems use default texture.",
+    "totemskin.config.mobsMode": "Mobs Totem Mode",
+    "totemskin.config.mobsMode.tooltip": "CUSTOM: Mobs holding totems show skin-based texture.\nVANILLA: Mobs always use default texture.",
+    "totemskin.config.player.tooltip": "Override totem mode for %s",
+    "totemskin.config.noPlayers": "No players found. Join a server to configure per-player settings.",
+    "totemskin.config.noServer": "Join a server to configure per-player settings."
 }
