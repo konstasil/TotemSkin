@@ -1,59 +1,53 @@
 # TotemSkin
 
-A Fabric client-side mod for Minecraft that dynamically retextures the Totem of Undying to match the skin of the player holding it.
+Retextures the Totem of Undying to match the skin of the player holding it. When a player holds a totem, the texture dynamically changes to show a mini version of that player's skin.
 
 ## Features
 
-- **Dynamic Totem Textures**: When a player holds a Totem of Undying, the totem texture automatically changes to a mini version of that player's skin.
-- **Per-Player Rendering**: Each player sees a totem rendered with their own skin. When looking at another player holding a totem, you see their skin on the totem instead.
-- **Inventory Support**: The custom totem texture appears both when held in hand and when displayed in the inventory.
-- **Automatic Skin Download**: Player skins are downloaded automatically from Mojang servers and cached for performance.
-- **Fallback Skins**: If a skin cannot be downloaded, a default Steve-like skin is used as a fallback.
-
-## How It Works
-
-The mod intercepts the totem rendering pipeline using Fabric Mixins. When a totem of undying is about to be rendered for a player entity:
-
-1. The player's skin texture is downloaded (or retrieved from cache).
-2. The `TotemTextureGenerator` extracts the face, torso, arms, and legs from the skin and composes them into a 16x16 totem texture.
-3. The generated texture is uploaded directly into the item texture atlas, replacing the vanilla totem pixels at the GPU level.
-4. After rendering, the original vanilla texture is restored.
-
-This approach ensures that only the specific totem being rendered is affected — ground items and other non-player contexts always display the vanilla totem texture.
+- **Dynamic skin-based totem texture** - the totem shows a mini version of the holder's skin
+- **Works for all players** - both premium and non-premium accounts
+- **Per-player config** - set custom or vanilla totem mode for individual players via ModMenu + Cloth Config
+- **Global & mob settings** - configure totem display mode globally and for mobs
+- **Smart slot management** - up to 8 players get custom totems simultaneously, with automatic eviction of the farthest player when all slots are full
+- **Multi-language**  -  English, Russian, Polish, German, French, Spanish, Portuguese
 
 ## Requirements
 
-- Minecraft 26.1.2
-- Fabric Loader >= 0.15.0
-- Java >= 21
+- Fabric API
+- [Cloth Config](https://modrinth.com/mod/cloth-config) (optional, for config screen)
+- [Mod Menu](https://modrinth.com/mod/modmenu) (optional, for config screen)
+
+## Download
+
+- [Modrinth](https://modrinth.com/project/totemskin)
 
 ## Installation
 
-1. Install [Fabric Loader](https://fabricmc.net/) for Minecraft 26.1.2.
-2. Download the latest TotemSkin JAR from [Modrinth](https://modrinth.com/project/totemskin).
-3. Place the JAR file in your `mods` folder.
-4. Launch Minecraft with the Fabric profile.
+1. Download the latest TotemSkin JAR from [Modrinth](https://modrinth.com/project/totemskin)
+2. Place the JAR in your `mods` folder
+3. (Optional) Install Cloth Config and Mod Menu for the config screen
 
-## Building from Source
+## Configuration
 
-```bash
-./gradlew build
-```
+Open Mod Menu=>TotemSkin=>Config to access settings:
 
-The built JAR will be located in `TotemSkin/build/libs/`.
+- **Global Totem Mode** - `CUSTOM` (skin-based) or `VANILLA` (default texture) for all players
+- **Mobs Totem Mode** - `CUSTOM` or `VANILLA` for mobs holding totems
+- **Per-player overrides** - configure each player individually (list auto-populates from server)
 
-## Localization
+Config file: `config/totemskin.json`
 
-TotemSkin is localized into the following languages:
+## How It Works
 
-- English (en_us)
-- Russian (ru_ru)
-- Polish (pl_pl)
-- German (de_de)
-- French (fr_fr)
-- Spanish (es_es)
-- Portuguese (pt_br)
+The mod intercepts the totem rendering pipeline using mixins. When a player holds a Totem of Undying:
+
+1. The player's skin texture is extracted (from DynamicTexture cache or resource pack)
+2. A 16x16 totem texture is generated mapping skin pixels to totem regions (head, body, arms, legs, overlay)
+3. The texture is written to a free slot in the item atlas
+4. The totem's UV coordinates are remapped to the custom texture slot
+
+Each player gets their own slot in the atlas (up to 8). When a player disconnects or moves far away, their slot is freed for reuse.
 
 ## License
 
-MIT License
+MIT
