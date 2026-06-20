@@ -1,7 +1,7 @@
 {
     "schemaVersion": 1,
     "id": "totemskin",
-    "version": "1.0",
+    "version": "1.1",
     "name": "TotemSkin",
     "description": "Retextures totems to match the player's skin. When a player holds a totem of undying, the texture dynamically changes to show a mini version of that player's skin.",
     "authors": [

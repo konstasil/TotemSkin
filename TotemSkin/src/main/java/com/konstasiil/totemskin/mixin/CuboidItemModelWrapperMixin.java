@@ -3,6 +3,7 @@ package com.konstasiil.totemskin.mixin;
 import com.konstasiil.totemskin.TotemSkinConfig;
 import com.konstasiil.totemskin.TotemSkinState;
 import com.konstasiil.totemskin.TotemTextureManager;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.renderer.item.CuboidItemModelWrapper;
 import net.minecraft.client.renderer.item.ItemModelResolver;
@@ -36,10 +37,17 @@ public class CuboidItemModelWrapperMixin {
         ((TotemSkinState) output).totemskin$setPlayerUUID(null);
 
         if (item.getItem() != Items.TOTEM_OF_UNDYING) return;
-        if (owner == null) return;
-        if (displayContext == ItemDisplayContext.GUI) return;
 
-        if (!(owner.asLivingEntity() instanceof AbstractClientPlayer player)) return;
+        if (displayContext == ItemDisplayContext.GUI && !TotemSkinConfig.get().showInInventory) return;
+
+        AbstractClientPlayer player = null;
+        if (owner != null && owner.asLivingEntity() instanceof AbstractClientPlayer p) {
+            player = p;
+        } else if (displayContext == ItemDisplayContext.FIXED) {
+            player = Minecraft.getInstance().player;
+        }
+
+        if (player == null) return;
 
         if (TotemSkinConfig.get().getModeForPlayer(player.getUUID()) == TotemSkinConfig.TotemMode.VANILLA) return;
 

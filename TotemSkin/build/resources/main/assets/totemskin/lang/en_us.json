@@ -7,6 +7,8 @@
     "totemskin.config.globalMode.tooltip": "CUSTOM: Totems show player skins.\nVANILLA: All totems use default texture.",
     "totemskin.config.mobsMode": "Mobs Totem Mode",
     "totemskin.config.mobsMode.tooltip": "CUSTOM: Mobs holding totems show skin-based texture.\nVANILLA: Mobs always use default texture.",
+    "totemskin.config.showInInventory": "Show Custom Totem in Inventory",
+    "totemskin.config.showInInventory.tooltip": "When enabled, the custom skin-based totem is shown\nin inventory and GUI. When disabled, only vanilla texture\nis shown in inventory.",
     "totemskin.config.player.tooltip": "Override totem mode for %s",
     "totemskin.config.noPlayers": "No players found. Join a server to configure per-player settings.",
     "totemskin.config.noServer": "Join a server to configure per-player settings."

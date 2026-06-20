@@ -7,6 +7,8 @@
     "totemskin.config.globalMode.tooltip": "EIGEN: Totems zeigen Spieler-Skins.\nSTANDARD: Alle Totems verwenden die Standardtextur.",
     "totemskin.config.mobsMode": "Mob Totem-Modus",
     "totemskin.config.mobsMode.tooltip": "EIGEN: Mobs mit Totems zeigen skin-basierte Textur.\nSTANDARD: Mobs verwenden immer die Standardtextur.",
+    "totemskin.config.showInInventory": "Eigenen Totem im Inventar anzeigen",
+    "totemskin.config.showInInventory.tooltip": "Wenn aktiviert, wird der skin-basierte Totem im Inventar angezeigt.\nWenn deaktiviert, wird nur der Standardtotem im Inventar angezeigt.",
     "totemskin.config.player.tooltip": "Totem-Modus fuer %s ueberschreiben",
     "totemskin.config.noPlayers": "Keine Spieler gefunden. Tritt einem Server bei.",
     "totemskin.config.noServer": "Tritt einem Server bei, um die Einstellungen zu konfigurieren."

@@ -40,6 +40,14 @@ public class TotemSkinConfigScreen {
                 .setSaveConsumer(config::setMobsMode)
                 .build());
 
+        general.addEntry(entry.startBooleanToggle(
+                        Component.translatable("totemskin.config.showInInventory"),
+                        config.showInInventory)
+                .setDefaultValue(true)
+                .setTooltip(Component.translatable("totemskin.config.showInInventory.tooltip"))
+                .setSaveConsumer(config::setShowInInventory)
+                .build());
+
         ConfigCategory players = builder.getOrCreateCategory(Component.translatable("totemskin.config.category.players"));
 
         Minecraft mc = Minecraft.getInstance();

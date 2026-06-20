@@ -28,6 +28,7 @@ public class TotemSkinConfig {
 
     public TotemMode globalMode = TotemMode.CUSTOM;
     public TotemMode mobsMode = TotemMode.CUSTOM;
+    public boolean showInInventory = true;
     public Map<String, TotemMode> playerOverrides = new LinkedHashMap<>();
 
     public static TotemSkinConfig get() {
@@ -64,6 +65,10 @@ public class TotemSkinConfig {
 
     public void setMobsMode(TotemMode mode) {
         this.mobsMode = mode;
+    }
+
+    public void setShowInInventory(boolean show) {
+        this.showInInventory = show;
     }
 
     public void save() {

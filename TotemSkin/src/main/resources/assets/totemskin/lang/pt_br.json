@@ -7,6 +7,8 @@
     "totemskin.config.globalMode.tooltip": "PERSONALIZADO: Tótems mostram skins dos jogadores.\nVANILLA: Todos os tótems usam textura padrão.",
     "totemskin.config.mobsMode": "Modo de tótems para mobs",
     "totemskin.config.mobsMode.tooltip": "PERSONALIZADO: Mobs com tótems mostram textura baseada na skin.\nVANILLA: Mobs sempre usam textura padrão.",
+    "totemskin.config.showInInventory": "Mostrar tótem personalizado no inventário",
+    "totemskin.config.showInInventory.tooltip": "Quando ativado, o tótem baseado na skin é exibido no inventário.\nQuando desativado, apenas o tótem vanilla é exibido no inventário.",
     "totemskin.config.player.tooltip": "Sobrescrever modo de tótem para %s",
     "totemskin.config.noPlayers": "Nenhum jogador encontrado. Entre em um servidor para configurar.",
     "totemskin.config.noServer": "Entre em um servidor para configurar as definições."
