@@ -20,6 +20,7 @@ Retextures the Totem of Undying to match the skin of the player holding it. When
 ## Download
 
 - [Modrinth](https://modrinth.com/project/totemskin)
+- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/totemskin)
 
 ## Installation
 
