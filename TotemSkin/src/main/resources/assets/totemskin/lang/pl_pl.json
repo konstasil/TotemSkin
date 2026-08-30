@@ -1,0 +1,15 @@
+{
+    "item.totemskin.totem_of_undying": "Totem nieśmiertelności",
+    "totemskin.config.title": "Ustawienia TotemSkin",
+    "totemskin.config.category.general": "Ogólne",
+    "totemskin.config.category.players": "Gracze",
+    "totemskin.config.globalMode": "Tryb globalny",
+    "totemskin.config.globalMode.tooltip": "WŁASNY: Totemy wyświetlają skórkę gracza.\nDOMYŚLNY: Wszystkietotemy używają domyślnej tekstury.",
+    "totemskin.config.mobsMode": "Tryb mobów",
+    "totemskin.config.mobsMode.tooltip": "WŁASNY: Moby z totemymi pokazują teksturę na podstawie skórki.\nDOMYŚLNY: Moby zawsze używają domyślnej tekstury.",
+    "totemskin.config.showInInventory": "Pokaż własny totem w ekwipunku",
+    "totemskin.config.showInInventory.tooltip": "Włączone: własny totem jest wyświetlany w ekwipunku.\nWyłączone: w ekwipunku pokazywany jest domyślny totem.",
+    "totemskin.config.player.tooltip": "Nadpisz tryb totemu dla %s",
+    "totemskin.config.noPlayers": "Nie znaleziono graczy. Dołącz do serwera, aby skonfigurować.",
+    "totemskin.config.noServer": "Dołącz do serwera, aby skonfigurować ustawienia."
+}

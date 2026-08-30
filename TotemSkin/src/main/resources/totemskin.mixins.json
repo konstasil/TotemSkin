@@ -1,0 +1,17 @@
+{
+    "required": true,
+    "package": "com.konstasiil.totemskin.mixin",
+    "compatibilityLevel": "JAVA_25",
+    "mixins": [
+    ],
+    "client": [
+        "ItemStackRenderStateMixin",
+        "CuboidItemModelWrapperMixin",
+        "LayerRenderStateMixin",
+        "ClientLevelMixin",
+        "DynamicTextureMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}
